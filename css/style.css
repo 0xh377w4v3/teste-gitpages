@@ -12,6 +12,7 @@
     align-items: center;
     height: 23px;
     padding: 10px;
+    border-bottom: 0.5px solid #FF0000;
     background: #1f2127;
 }
 .paragraph-superior {
@@ -30,19 +31,38 @@ h1 {
     font-family: 'mrrobot';
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
     line-height: 35px;
     color: #ff0000;
 }
 ul {
     display: flex;
-    gap: 40px; 
+    flex-direction: row;
+}
+li {
     flex-direction: row;
     font-style: normal;
     font-weight: bold;
     list-style: none;
-    color: aliceblue;
+    color:antiquewhite;
+    font-size: 20px;
+    padding: 20px;
+}
+.button-superior {
+    width: 160px;
+    height: 50px;
+    border-radius: 40px;
+    /* border: none; */
+    border: 1px solid #FF0000;
+    background-color: #141518;
+}
+.paragraph-button-superior {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(255, 0, 0)
 }
 .banner {
     background-image: url("../img/banner-mrrobot.jpg");
@@ -50,16 +70,33 @@ ul {
     width: 100%;
     height: 400px;
 }
+.sinopse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    padding-top: 30px;
+    font-size: 30px;
+    font-family: 'mrrobot';
+    color: #ff0000;
+    background-color: #0d0e11;
+}
+.paragraph-sinopse {
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #0d0e11;
+}
 .personagens {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 60px;
-    padding: 20px;
+    padding-top: 30px;
     font-size: 30px;
     font-family: 'mrrobot';
     color: #ff0000;
-    background-color: #0d0e11;;
+    background-color: #0d0e11;
 }
 
 .container-pai {
@@ -85,9 +122,13 @@ ul {
     height: 700px;
     border-radius: 40px;
     background-color: #1f2127;
+    border: 0.5px solid #cacaca;
+    
 }
 .profile-elliot {
     background: url("../img/profile-elliot.png");
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(219,0,0,0.63); 
+    box-shadow: 0px 0px 15px 5px rgba(219,0,0,0.63);
     position: absolute;
     border-radius: 100%;
     width: 180px;
@@ -100,10 +141,12 @@ ul {
     display: flex;
     width: 100%;
     height: 300px;
-    border-radius: 30px 30px 0 0;
+    border-radius: 40px 40px 0 0;
 }
 .profile-darlene {
     background-image: url("../img/profile-darlene.png");
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(219,0,0,0.63); 
+    box-shadow: 0px 0px 15px 5px rgba(219,0,0,0.63);
     display: block;
     position: absolute;
     align-content: center;
@@ -117,10 +160,12 @@ ul {
     background-image: url("../img/cover-darlene.jpg");
     width: 100%;
     height: 300px;
-    border-radius: 30px 30px 0 0;
+    border-radius: 40px 40px 0 0;
 }
 .profile-tyrell {
     background-image: url("../img/profile-tyrell.png");
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(219,0,0,0.63); 
+    box-shadow: 0px 0px 15px 5px rgba(219,0,0,0.63);
     display: block;
     position: absolute;
     align-content: center;
@@ -134,10 +179,12 @@ ul {
     background-image: url("../img/cover-tyrell.jpg");
     width: 100%;
     height: 300px;
-    border-radius: 30px 30px 0 0;
+    border-radius: 40px 40px 0 0;
 }
 .profile-whiterose {
     background-image: url("../img/profile-whiterose.png");
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(219,0,0,0.63); 
+    box-shadow: 0px 0px 15px 5px rgba(219,0,0,0.63);
     display: block;
     position: absolute;
     align-content: center;
@@ -151,10 +198,12 @@ ul {
     background-image: url("../img/cover-whiterose.png");
     width: 100%;
     height: 300px;
-    border-radius: 30px 30px 0 0;
+    border-radius: 40px 40px 0 0;
 }
 .profile-mrrobot {
     background: url("../img/profile-mrrobot.jpg");
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(219,0,0,0.63); 
+    box-shadow: 0px 0px 15px 5px rgba(219,0,0,0.63);
     position: absolute;
     border-radius: 100%;
     width: 180px;
@@ -167,10 +216,12 @@ ul {
     display: flex;
     width: 100%;
     height: 300px;
-    border-radius: 30px 30px 0 0;
+    border-radius: 40px 40px 0 0;
 }
 .profile-price {
     background: url("../img/profile-price.png");
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(219,0,0,0.63); 
+    box-shadow: 0px 0px 15px 5px rgba(219,0,0,0.63);
     position: absolute;
     border-radius: 100%;
     width: 180px;
@@ -183,17 +234,9 @@ ul {
     display: flex;
     width: 100%;
     height: 300px;
-    border-radius: 30px 30px 0 0;
+    border-radius: 40px 40px 0 0;
 }
-.heart {
-    background-image: url("../img/heart.png");
-    display: flex;
-    position: absolute;
-    margin-top: 20px;
-    margin-left: 20px;
-    width: 23px;
-    height: 20px;
-}
+
 h2 {
     display: flex;
     justify-content: center;
@@ -212,19 +255,22 @@ p {
     align-items: center;
     position: absolute;
     margin-top: 630px;
-    margin-left: 132px;
+    margin-left: 155px;
 }
 button {
-    width: 200px;
-    height: 60px;
+    width: 160px;
+    height: 50px;
     border-radius: 30px;
-    background-color: rgb(216, 216, 216);
+    border: none;
+    border: 1px solid #ff0000;
+    background-color: #141518;
 }
 .paragraph-button {
-    font-size: 15px;
+    padding: 10px;
+    font-size: 20px;
     font-weight: bold;
     text-align: center;
-    color: rgb(0, 0, 0)
+    color: #FF0000;
 }
 .footer {
     display: flex;
@@ -232,6 +278,7 @@ button {
     width: 100%;
     padding: 15px;
     background-color: #1f2127;
+    border-top: 0.5px solid #FF0000;
 }
 .div-footer {
     display: flex;
@@ -258,7 +305,7 @@ button {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 15px;
+        font-size: 30px;
         
     }
     header {
@@ -273,8 +320,8 @@ button {
         font-family: 'mrrobot';
         font-style: normal;
         font-weight: 400;
-        font-size: 29px;
-        line-height: 30px;
+        font-size: 60px;
+        line-height: 60px;
         text-align: center;
         color: #ff0000;
         padding: 10px;
@@ -282,14 +329,31 @@ button {
     ul {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
+        flex-direction: row;
+    }
+    li {
         font-style: normal;
         font-weight: bold;
         list-style: none;
+        color:antiquewhite;
         font-size: 20px;
-        gap: 20px; 
-        color: aliceblue;
+        padding: 10px;
+    }
+    .button-superior {
+        justify-content: center;
+        width: 130px;
+        height: 50px;
+        border-radius: 40px;
+        /* border: none; */
+        border: 1px solid #FF0000;
+        background-color: #141518;
+    }
+    .paragraph-button-superior {
+        padding: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        color: rgb(255, 0, 0)
     }
     .banner {
         background-image: url("../img/banner-mrrobot-mini.jpg");
@@ -304,6 +368,23 @@ button {
         font-weight: bold;
         font-size: 10px;
         color: #ff0000;
+    }
+    .sinopse {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        padding-top: 30px;
+        font-size: 30px;
+        font-family: 'mrrobot';
+        color: #ff0000;
+        background-color: #0d0e11;
+    }
+    .paragraph-sinopse {
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #0d0e11;
     }
     .container-pai {
         position: absolute;
@@ -335,7 +416,7 @@ button {
         width: 180px;
         height: 180px;
         margin-top: 205px;
-        margin-left: 22.5%;
+        margin-left: 25.5%;
     }
     .profile-darlene {
         background-image: url("../img/profile-darlene.png");
@@ -346,7 +427,7 @@ button {
         width: 180px;
         height: 180px;
         margin-top: 205px;
-        margin-left: 22.5%;
+        margin-left: 25.5%;
     }
     .profile-tyrell {
         background-image: url("../img/profile-tyrell.png");
@@ -357,7 +438,7 @@ button {
         width: 180px;
         height: 180px;
         margin-top: 205px;
-        margin-left: 22.5%;
+        margin-left: 25.5%;
     }
     .profile-whiterose {
         background-image: url("../img/profile-whiterose.png");
@@ -368,7 +449,7 @@ button {
         width: 180px;
         height: 180px;
         margin-top: 205px;
-        margin-left: 22.5%;
+        margin-left: 25.5%;
     }
     .profile-mrrobot {
         background-image: url("../img/profile-mrrobot.jpg");
@@ -379,7 +460,7 @@ button {
         width: 180px;
         height: 180px;
         margin-top: 205px;
-        margin-left: 22.5%;
+        margin-left: 25.5%;
     }
     .profile-price {
         background-image: url("../img/profile-price.png");
@@ -390,24 +471,17 @@ button {
         width: 180px;
         height: 180px;
         margin-top: 205px;
-        margin-left: 22.5%;
-    }
-    .heart {
-        background-image: url("../img/heart.png");
-        display: flex;
-        position: absolute;
-        margin-top: 20px;
-        margin-left: 20px;
-        width: 23px;
-        height: 20px;
+        margin-left: 25.5%;
     }
     h2 {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 100px;
+        font-size: 30px;
     }
     p {
+        font-size: 20px;
         padding: 20px;
     } 
     .div-button {
@@ -416,12 +490,22 @@ button {
         align-items: center;
         position: absolute;
         margin-top: 730px;
-        margin-left: 19.5%;
+        margin-left: 28%;
     }
     button {
-        width: 200px;
-        height: 60px;
-        background-color: rgb(216, 216, 216);
+        width: 160px;
+        height: 50px;
+        border-radius: 30px;
+        border: none;
+        border: 1px solid #ff0000;
+        background-color: #141518;
+    }
+    .paragraph-button {
+        padding: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        color: #FF0000;
     }
     .footer {
         display: flex;
@@ -468,15 +552,16 @@ button {
     }
     ul {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
+        flex-direction: row;
+    }
+    li {
+        flex-direction: row;
         font-style: normal;
         font-weight: bold;
         list-style: none;
+        color:antiquewhite;
         font-size: 20px;
-        gap: 20px; 
-        color: aliceblue;
+        padding: 5px;
     }
     .banner {
         background-image: url("../img/banner-mrrobot-mini.jpg");
@@ -491,6 +576,23 @@ button {
         font-weight: bold;
         font-size: 10px;
         color: #ff0000;
+    }
+    .sinopse {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        padding-top: 30px;
+        font-size: 30px;
+        font-family: 'mrrobot';
+        color: #ff0000;
+        background-color: #0d0e11;
+    }
+    .paragraph-sinopse {
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #0d0e11;
     }
     .container-pai {
         position: absolute;
@@ -655,15 +757,16 @@ button {
     }
     ul {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
+        flex-direction: row;
+    }
+    li {
+        flex-direction: row;
         font-style: normal;
         font-weight: bold;
         list-style: none;
+        color:antiquewhite;
         font-size: 20px;
-        gap: 20px; 
-        color: aliceblue;
+        padding: 5px;
     }
     .banner {
         background-image: url("../img/banner-mrrobot-mini.jpg");
@@ -678,6 +781,23 @@ button {
         font-weight: bold;
         font-size: 10px;
         color: #ff0000;
+    }
+    .sinopse {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        padding-top: 30px;
+        font-size: 30px;
+        font-family: 'mrrobot';
+        color: #ff0000;
+        background-color: #0d0e11;
+    }
+    .paragraph-sinopse {
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #0d0e11;
     }
     .container-pai {
         position: absolute;
@@ -841,15 +961,16 @@ button {
     }
     ul {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
+        flex-direction: row;
+    }
+    li {
+        flex-direction: row;
         font-style: normal;
         font-weight: bold;
         list-style: none;
+        color:antiquewhite;
         font-size: 20px;
-        gap: 20px; 
-        color: aliceblue;
+        padding: 5px;
     }
     .banner {
         background-image: url("../img/banner-mrrobot-mini.jpg");
@@ -864,6 +985,23 @@ button {
         font-weight: bold;
         font-size: 10px;
         color: #ff0000;
+    }
+    .sinopse {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        padding-top: 30px;
+        font-size: 30px;
+        font-family: 'mrrobot';
+        color: #ff0000;
+        background-color: #0d0e11;
+    }
+    .paragraph-sinopse {
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #0d0e11;
     }
     .container-pai {
         position: absolute;
@@ -1029,15 +1167,16 @@ button {
     }
     ul {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
+        flex-direction: row;
+    }
+    li {
+        flex-direction: row;
         font-style: normal;
         font-weight: bold;
         list-style: none;
+        color:antiquewhite;
         font-size: 20px;
-        gap: 20px; 
-        color: aliceblue;
+        padding: 5px;
     }
     .banner {
         background-image: url("../img/banner-mrrobot-mini.jpg");
@@ -1052,6 +1191,23 @@ button {
         font-weight: bold;
         font-size: 10px;
         color: #ff0000;
+    }
+    .sinopse {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        padding-top: 30px;
+        font-size: 30px;
+        font-family: 'mrrobot';
+        color: #ff0000;
+        background-color: #0d0e11;
+    }
+    .paragraph-sinopse {
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #0d0e11;
     }
     .container-pai {
         position: absolute;
@@ -1216,15 +1372,16 @@ button {
     }
     ul {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
+        flex-direction: row;
+    }
+    li {
+        flex-direction: row;
         font-style: normal;
         font-weight: bold;
         list-style: none;
+        color:antiquewhite;
         font-size: 20px;
-        gap: 20px; 
-        color: aliceblue;
+        padding: 5px;
     }
     .banner {
         background-image: url("../img/banner-mrrobot-mini.jpg");
@@ -1239,6 +1396,23 @@ button {
         font-weight: bold;
         font-size: 10px;
         color: #ff0000;
+    }
+    .sinopse {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        padding-top: 30px;
+        font-size: 30px;
+        font-family: 'mrrobot';
+        color: #ff0000;
+        background-color: #0d0e11;
+    }
+    .paragraph-sinopse {
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #0d0e11;
     }
     .container-pai {
         position: absolute;
@@ -1402,15 +1576,16 @@ button {
     }
     ul {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
+        flex-direction: row;
+    }
+    li {
+        flex-direction: row;
         font-style: normal;
         font-weight: bold;
         list-style: none;
+        color:antiquewhite;
         font-size: 20px;
-        gap: 20px; 
-        color: aliceblue;
+        padding: 5px;
     }
     .banner {
         background-image: url("../img/banner-mrrobot-mini.jpg");
@@ -1425,6 +1600,23 @@ button {
         font-weight: bold;
         font-size: 10px;
         color: #ff0000;
+    }
+    .sinopse {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        padding-top: 30px;
+        font-size: 30px;
+        font-family: 'mrrobot';
+        color: #ff0000;
+        background-color: #0d0e11;
+    }
+    .paragraph-sinopse {
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #0d0e11;
     }
     .container-pai {
         position: absolute;
@@ -1590,15 +1782,16 @@ button {
     }
     ul {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
+        flex-direction: row;
+    }
+    li {
+        flex-direction: row;
         font-style: normal;
         font-weight: bold;
         list-style: none;
+        color:antiquewhite;
         font-size: 20px;
-        gap: 20px; 
-        color: aliceblue;
+        padding: 5px;
     }
     .banner {
         background-image: url("../img/banner-mrrobot-mini.jpg");
@@ -1613,6 +1806,23 @@ button {
         font-weight: bold;
         font-size: 10px;
         color: #ff0000;
+    }
+    .sinopse {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        padding-top: 30px;
+        font-size: 30px;
+        font-family: 'mrrobot';
+        color: #ff0000;
+        background-color: #0d0e11;
+    }
+    .paragraph-sinopse {
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #0d0e11;
     }
     .container-pai {
         position: absolute;
@@ -1778,15 +1988,16 @@ button {
     }
     ul {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
+        flex-direction: row;
+    }
+    li {
+        flex-direction: row;
         font-style: normal;
         font-weight: bold;
         list-style: none;
+        color:antiquewhite;
         font-size: 20px;
-        gap: 20px; 
-        color: aliceblue;
+        padding: 5px;
     }
     .banner {
         background-image: url("../img/banner-mrrobot-mini.jpg");
@@ -1801,6 +2012,23 @@ button {
         font-weight: bold;
         font-size: 10px;
         color: #ff0000;
+    }
+    .sinopse {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        padding-top: 30px;
+        font-size: 30px;
+        font-family: 'mrrobot';
+        color: #ff0000;
+        background-color: #0d0e11;
+    }
+    .paragraph-sinopse {
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #0d0e11;
     }
     .container-pai {
         position: absolute;
@@ -1965,15 +2193,16 @@ button {
     }
     ul {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
+        flex-direction: row;
+    }
+    li {
+        flex-direction: row;
         font-style: normal;
         font-weight: bold;
         list-style: none;
+        color:antiquewhite;
         font-size: 20px;
-        gap: 20px; 
-        color: aliceblue;
+        padding: 5px;
     }
     .banner {
         background-image: url("../img/banner-mrrobot-mini.jpg");
@@ -1988,6 +2217,23 @@ button {
         font-weight: bold;
         font-size: 10px;
         color: #ff0000;
+    }
+    .sinopse {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        padding-top: 30px;
+        font-size: 30px;
+        font-family: 'mrrobot';
+        color: #ff0000;
+        background-color: #0d0e11;
+    }
+    .paragraph-sinopse {
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #0d0e11;
     }
     .container-pai {
         position: absolute;
@@ -2153,15 +2399,16 @@ button {
     }
     ul {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
+        flex-direction: row;
+    }
+    li {
+        flex-direction: row;
         font-style: normal;
         font-weight: bold;
         list-style: none;
+        color:antiquewhite;
         font-size: 20px;
-        gap: 20px; 
-        color: aliceblue;
+        padding: 5px;
     }
     .banner {
         background-image: url("../img/banner-mrrobot-mini.jpg");
@@ -2171,6 +2418,23 @@ button {
         width: 100%;
         height: 115px;
         background-image:no-repeat;
+    }
+    .sinopse {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        padding-top: 30px;
+        font-size: 30px;
+        font-family: 'mrrobot';
+        color: #ff0000;
+        background-color: #0d0e11;
+    }
+    .paragraph-sinopse {
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #0d0e11;
     }
     .paragraph-superior {
         font-weight: bold;
@@ -2340,15 +2604,16 @@ button {
     }
     ul {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
+        flex-direction: row;
+    }
+    li {
+        flex-direction: row;
         font-style: normal;
         font-weight: bold;
         list-style: none;
+        color:antiquewhite;
         font-size: 20px;
-        gap: 20px; 
-        color: aliceblue;
+        padding: 5px;
     }
     .banner {
         background-image: url("../img/banner-mrrobot-mini.jpg");
@@ -2363,6 +2628,23 @@ button {
         font-weight: bold;
         font-size: 10px;
         color: #ff0000;
+    }
+    .sinopse {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        padding-top: 30px;
+        font-size: 30px;
+        font-family: 'mrrobot';
+        color: #ff0000;
+        background-color: #0d0e11;
+    }
+    .paragraph-sinopse {
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #0d0e11;
     }
     .container-pai {
         position: absolute;
@@ -2527,15 +2809,16 @@ button {
     }
     ul {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
+        flex-direction: row;
+    }
+    li {
+        flex-direction: row;
         font-style: normal;
         font-weight: bold;
         list-style: none;
+        color:antiquewhite;
         font-size: 20px;
-        gap: 20px; 
-        color: aliceblue;
+        padding: 5px;
     }
     .banner {
         background-image: url("../img/banner-mrrobot-mini.jpg");
@@ -2550,6 +2833,23 @@ button {
         font-weight: bold;
         font-size: 10px;
         color: #ff0000;
+    }
+    .sinopse {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        padding-top: 30px;
+        font-size: 30px;
+        font-family: 'mrrobot';
+        color: #ff0000;
+        background-color: #0d0e11;
+    }
+    .paragraph-sinopse {
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #0d0e11;
     }
     .container-pai {
         position: absolute;
@@ -2715,15 +3015,16 @@ button {
     }
     ul {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
+        flex-direction: row;
+    }
+    li {
+        flex-direction: row;
         font-style: normal;
         font-weight: bold;
         list-style: none;
+        color:antiquewhite;
         font-size: 20px;
-        gap: 20px; 
-        color: aliceblue;
+        padding: 5px;
     }
     .banner {
         background-image: url("../img/banner-mrrobot-mini.jpg");
@@ -2738,6 +3039,23 @@ button {
         font-weight: bold;
         font-size: 10px;
         color: #ff0000;
+    }
+    .sinopse {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        padding-top: 30px;
+        font-size: 30px;
+        font-family: 'mrrobot';
+        color: #ff0000;
+        background-color: #0d0e11;
+    }
+    .paragraph-sinopse {
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #0d0e11;
     }
     .container-pai {
         position: absolute;
@@ -2902,15 +3220,16 @@ button {
     }
     ul {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
+        flex-direction: row;
+    }
+    li {
+        flex-direction: row;
         font-style: normal;
         font-weight: bold;
         list-style: none;
+        color:antiquewhite;
         font-size: 20px;
-        gap: 20px; 
-        color: aliceblue;
+        padding: 5px;
     }
     .banner {
         background-image: url("../img/banner-mrrobot-mini.jpg");
@@ -2925,6 +3244,23 @@ button {
         font-weight: bold;
         font-size: 10px;
         color: #ff0000;
+    }
+    .sinopse {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        padding-top: 30px;
+        font-size: 30px;
+        font-family: 'mrrobot';
+        color: #ff0000;
+        background-color: #0d0e11;
+    }
+    .paragraph-sinopse {
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #0d0e11;
     }
     .container-pai {
         position: absolute;
@@ -3089,15 +3425,16 @@ button {
     }
     ul {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
+        flex-direction: row;
+    }
+    li {
+        flex-direction: row;
         font-style: normal;
         font-weight: bold;
         list-style: none;
+        color:antiquewhite;
         font-size: 20px;
-        gap: 20px; 
-        color: aliceblue;
+        padding: 5px;
     }
     .banner {
         background-image: url("../img/banner-mrrobot-mini.jpg");
@@ -3112,6 +3449,23 @@ button {
         font-weight: bold;
         font-size: 10px;
         color: #ff0000;
+    }
+    .sinopse {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        padding-top: 30px;
+        font-size: 30px;
+        font-family: 'mrrobot';
+        color: #ff0000;
+        background-color: #0d0e11;
+    }
+    .paragraph-sinopse {
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #0d0e11;
     }
     .container-pai {
         position: absolute;
