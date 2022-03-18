@@ -28,7 +28,6 @@ header {
 }
 h1 {
     font-family: 'mrrobot';
-    /* font-family: 'SEGA LOGO FONT', sans-serif; */
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
@@ -44,14 +43,12 @@ ul {
     font-weight: bold;
     list-style: none;
     color: aliceblue;
-
 }
 .banner {
     background-image: url("../img/banner-mrrobot.jpg");
     display: flex;
     width: 100%;
     height: 400px;
-    
 }
 .personagens {
     display: flex;
@@ -251,7 +248,6 @@ button {
     font-family: 'mrrobot';
     font-weight: bold;
     color: red;
-
 }
 
 /* Smathphones iPhone Pro 12/13 */
@@ -262,7 +258,7 @@ button {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 12px;
+        font-size: 15px;
         
     }
     header {
