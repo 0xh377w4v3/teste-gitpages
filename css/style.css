@@ -3865,8 +3865,8 @@ button {
     button {
         width: 200px;
         height: 60px;
-        background-color: rgb(216, 216, 216);
-    }
+        border: 1px solid #FF0000;
+        background-color: #141518;
     .div-footer {
         display: flex;
         justify-content: center;
