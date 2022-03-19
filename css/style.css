@@ -89,6 +89,7 @@ li {
     font-size: 20px;
     padding-left: 50px;
     padding-right: 50px;
+    color: #cacaca;
     background-color: #0d0e11;
     gap: 50px;
 }
@@ -291,9 +292,11 @@ button {
     text-align: center;
     color: #FF0000;
 }
+
+/* Footer */
 .footer {
     display: flex;
-    height: 100%;
+    height: 110px;
     width: 100%;
     padding: 15px;
     background-color: #1f2127;
@@ -480,7 +483,7 @@ button {
         width: 180px;
         height: 180px;
         margin-top: 205px;
-        margin-left: 27%;
+        margin-left: 26%;
     }
     .profile-mrrobot {
         background-image: url("../img/profile-mrrobot.jpg");
@@ -521,7 +524,7 @@ button {
         align-items: center;
         position: absolute;
         margin-top: 730px;
-        margin-left: 30%;
+        margin-left: 28%;
     }
     button {
         width: 160px;
@@ -540,9 +543,10 @@ button {
     }
     .footer {
         display: flex;
-        height: 100%;
-        width: 100%;
-        padding: 15px;
+        align-items: center;
+        justify-content: space-between;
+        height: 100px;
+        padding: 40px;
         background-color: #1f2127;
         border-top: 0.5px solid #FF0000;
     }
@@ -576,8 +580,7 @@ button {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 15px;
-        
+        font-size: 15px;  
     }
     header {
         display: flex;
@@ -614,7 +617,6 @@ button {
         width: 100px;
         height: 50px;
         border-radius: 40px;
-        /* border: none; */
         border: 1px solid #FF0000;
         background-color: #141518;
     }
@@ -778,7 +780,6 @@ button {
 
         width: 100%; /* Vericar se ficou correto */
     }
-
 }
 
 /* Portrait */
@@ -787,12 +788,12 @@ button {
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
+    
     .div-superior {
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 15px;
-        
     }
     header {
         display: flex;
@@ -829,7 +830,6 @@ button {
         width: 100px;
         height: 50px;
         border-radius: 40px;
-        /* border: none; */
         border: 1px solid #FF0000;
         background-color: #141518;
     }
@@ -1058,7 +1058,6 @@ button {
         width: 100px;
         height: 50px;
         border-radius: 40px;
-        /* border: none; */
         border: 1px solid #FF0000;
         background-color: #141518;
     }
@@ -1686,6 +1685,7 @@ button {
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
+    
     .div-superior {
         display: flex;
         justify-content: center;
@@ -1912,7 +1912,6 @@ button {
         justify-content: center;
         align-items: center;
         font-size: 15px;
-        
     }
     header {
         display: flex;
