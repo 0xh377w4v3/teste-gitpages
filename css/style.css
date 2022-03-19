@@ -20,6 +20,7 @@
     color: #ff0000;
 }
 header {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -66,6 +67,7 @@ li {
 }
 .banner {
     background-image: url("../img/banner-mrrobot.jpg");
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     display: flex;
     width: 100%;
     height: 400px;
@@ -134,8 +136,6 @@ li {
     margin-left: 95%;
     position: fixed;
     background-repeat: no-repeat;
-    outline: 0;
-    -moz-outline-style: none;
 }
 .profile-elliot {
     background: url("../img/profile-elliot.png");
@@ -313,7 +313,7 @@ button {
 
 /* Smathphones iPhone Pro 12/13 */
 
-@media (max-width: 460px) and (max-width:640px){ /* Smartphones */
+@media (min-width: 460px) and (max-width:640px){ /* Smartphones */
     
     .div-superior {
         display: flex;
@@ -421,6 +421,9 @@ button {
         border-radius: 40px;
         background-color: #1f2127;
     }
+    .float-button {
+        display: none;
+    }
     .profile-elliot {
         background-image: url("../img/profile-elliot.png");
         display: block;
@@ -430,7 +433,7 @@ button {
         width: 180px;
         height: 180px;
         margin-top: 205px;
-        margin-left: 25.5%;
+        margin-left: 28%;
     }
     .profile-darlene {
         background-image: url("../img/profile-darlene.png");
@@ -441,7 +444,7 @@ button {
         width: 180px;
         height: 180px;
         margin-top: 205px;
-        margin-left: 25.5%;
+        margin-left: 28%;
     }
     .profile-tyrell {
         background-image: url("../img/profile-tyrell.png");
@@ -452,7 +455,7 @@ button {
         width: 180px;
         height: 180px;
         margin-top: 205px;
-        margin-left: 25.5%;
+        margin-left: 28%;
     }
     .profile-whiterose {
         background-image: url("../img/profile-whiterose.png");
@@ -463,7 +466,7 @@ button {
         width: 180px;
         height: 180px;
         margin-top: 205px;
-        margin-left: 25.5%;
+        margin-left: 28%;
     }
     .profile-mrrobot {
         background-image: url("../img/profile-mrrobot.jpg");
@@ -474,7 +477,7 @@ button {
         width: 180px;
         height: 180px;
         margin-top: 205px;
-        margin-left: 25.5%;
+        margin-left: 28%;
     }
     .profile-price {
         background-image: url("../img/profile-price.png");
@@ -485,7 +488,7 @@ button {
         width: 180px;
         height: 180px;
         margin-top: 205px;
-        margin-left: 25.5%;
+        margin-left: 28%;
     }
     h2 {
         display: flex;
@@ -504,7 +507,7 @@ button {
         align-items: center;
         position: absolute;
         margin-top: 730px;
-        margin-left: 28%;
+        margin-left: 30%;
     }
     button {
         width: 160px;
@@ -523,12 +526,27 @@ button {
     }
     .footer {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 260px;
-
-        width: 100%; /* Vericar se ficou correto */
+        height: 100%;
+        width: 100%;
+        padding: 15px;
+        background-color: #1f2127;
+        border-top: 0.5px solid #FF0000;
+    }
+    .div-footer {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        list-style: none;
+        font-size: 30px;
+    }
+    .paragraph-footer {
+        text-align: center;
+        color: rgb(241, 241, 241);
+    }
+    .span {
+        font-family: 'mrrobot';
+        font-weight: bold;
+        color: red;
     }
     
 }
@@ -539,6 +557,7 @@ button {
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
+    
     .div-superior {
         display: flex;
         justify-content: center;
@@ -558,7 +577,7 @@ button {
         font-family: 'mrrobot';
         font-style: normal;
         font-weight: 400;
-        font-size: 29px;
+        font-size: 60px;
         line-height: 30px;
         text-align: center;
         color: #ff0000;
@@ -576,6 +595,21 @@ button {
         color:antiquewhite;
         font-size: 20px;
         padding: 5px;
+    }
+    .button-superior {
+        width: 100px;
+        height: 50px;
+        border-radius: 40px;
+        /* border: none; */
+        border: 1px solid #FF0000;
+        background-color: #141518;
+    }
+    .paragraph-button-superior {
+        padding: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        color: rgb(255, 0, 0)
     }
     .banner {
         background-image: url("../img/banner-mrrobot-mini.jpg");
@@ -628,6 +662,9 @@ button {
         height: 800px;
         border-radius: 40px;
         background-color: #1f2127;
+    }
+    .float-button {
+        display: none;
     }
     .profile-elliot {
         background-image: url("../img/profile-elliot.png");
@@ -695,15 +732,6 @@ button {
         margin-top: 205px;
         margin-left: 22.5%;
     }
-    .heart {
-        background-image: url("../img/heart.png");
-        display: flex;
-        position: absolute;
-        margin-top: 20px;
-        margin-left: 20px;
-        width: 23px;
-        height: 20px;
-    }
     h2 {
         display: flex;
         justify-content: center;
@@ -724,7 +752,8 @@ button {
     button {
         width: 200px;
         height: 60px;
-        background-color: rgb(216, 216, 216);
+        border: 1px solid #FF0000;
+        background-color: #141518;
     }
     .footer {
         display: flex;
@@ -763,7 +792,7 @@ button {
         font-family: 'mrrobot';
         font-style: normal;
         font-weight: 400;
-        font-size: 29px;
+        font-size: 40px;
         line-height: 30px;
         text-align: center;
         color: #ff0000;
@@ -781,6 +810,21 @@ button {
         color:antiquewhite;
         font-size: 20px;
         padding: 5px;
+    }
+    .button-superior {
+        width: 100px;
+        height: 50px;
+        border-radius: 40px;
+        /* border: none; */
+        border: 1px solid #FF0000;
+        background-color: #141518;
+    }
+    .paragraph-button-superior {
+        padding: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        color: rgb(255, 0, 0)
     }
     .banner {
         background-image: url("../img/banner-mrrobot-mini.jpg");
@@ -833,6 +877,9 @@ button {
         height: 800px;
         border-radius: 40px;
         background-color: #1f2127;
+    }
+    .float-button {
+        display: none;
     }
     .profile-elliot {
         background-image: url("../img/profile-elliot.png");
@@ -900,15 +947,6 @@ button {
         margin-top: 205px;
         margin-left: 22.5%;
     }
-    .heart {
-        background-image: url("../img/heart.png");
-        display: flex;
-        position: absolute;
-        margin-top: 20px;
-        margin-left: 20px;
-        width: 23px;
-        height: 20px;
-    }
     h2 {
         display: flex;
         justify-content: center;
@@ -929,16 +967,32 @@ button {
     button {
         width: 200px;
         height: 60px;
-        background-color: rgb(216, 216, 216);
+        border: 1px solid #FF0000;
+        background-color: #141518;
     }
     .footer {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 260px;
-
-        width: 100%; /* Vericar se ficou correto */
+        height: 100%;
+        width: 100%;
+        padding: 15px;
+        background-color: #1f2127;
+        border-top: 0.5px solid #FF0000;
+    }
+    .div-footer {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        list-style: none;
+        font-size: 30px;
+    }
+    .paragraph-footer {
+        text-align: center;
+        color: rgb(241, 241, 241);
+    }
+    .span {
+        font-family: 'mrrobot';
+        font-weight: bold;
+        color: red;
     }
 }
 
@@ -967,7 +1021,7 @@ button {
         font-family: 'mrrobot';
         font-style: normal;
         font-weight: 400;
-        font-size: 29px;
+        font-size: 40px;
         line-height: 30px;
         text-align: center;
         color: #ff0000;
@@ -985,6 +1039,21 @@ button {
         color:antiquewhite;
         font-size: 20px;
         padding: 5px;
+    }
+    .button-superior {
+        width: 100px;
+        height: 50px;
+        border-radius: 40px;
+        /* border: none; */
+        border: 1px solid #FF0000;
+        background-color: #141518;
+    }
+    .paragraph-button-superior {
+        padding: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        color: rgb(255, 0, 0)
     }
     .banner {
         background-image: url("../img/banner-mrrobot-mini.jpg");
@@ -1037,6 +1106,9 @@ button {
         height: 800px;
         border-radius: 40px;
         background-color: #1f2127;
+    }
+    .float-button {
+        display: none;
     }
     .profile-elliot {
         background-image: url("../img/profile-elliot.png");
@@ -1104,15 +1176,6 @@ button {
         margin-top: 205px;
         margin-left: 22.5%;
     }
-    .heart {
-        background-image: url("../img/heart.png");
-        display: flex;
-        position: absolute;
-        margin-top: 20px;
-        margin-left: 20px;
-        width: 23px;
-        height: 20px;
-    }
     h2 {
         display: flex;
         justify-content: center;
@@ -1133,18 +1196,33 @@ button {
     button {
         width: 200px;
         height: 60px;
-        background-color: rgb(216, 216, 216);
+        border: 1px solid #FF0000;
+        background-color: #141518;
     }
     .footer {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 260px;
-
-        width: 100%; /* Vericar se ficou correto */
+        height: 100%;
+        width: 100%;
+        padding: 15px;
+        background-color: #1f2127;
+        border-top: 0.5px solid #FF0000;
     }
-
+    .div-footer {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        list-style: none;
+        font-size: 30px;
+    }
+    .paragraph-footer {
+        text-align: center;
+        color: rgb(241, 241, 241);
+    }
+    .span {
+        font-family: 'mrrobot';
+        font-weight: bold;
+        color: red;
+    }
 }
 
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
@@ -1154,12 +1232,12 @@ button {
   and (min-device-width: 320px) 
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2) {
+    
     .div-superior {
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 15px;
-        
     }
     header {
         display: flex;
@@ -1173,7 +1251,7 @@ button {
         font-family: 'mrrobot';
         font-style: normal;
         font-weight: 400;
-        font-size: 29px;
+        font-size: 40px;
         line-height: 30px;
         text-align: center;
         color: #ff0000;
@@ -1191,6 +1269,21 @@ button {
         color:antiquewhite;
         font-size: 20px;
         padding: 5px;
+    }
+    .button-superior {
+        width: 100px;
+        height: 50px;
+        border-radius: 40px;
+        /* border: none; */
+        border: 1px solid #FF0000;
+        background-color: #141518;
+    }
+    .paragraph-button-superior {
+        padding: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        color: rgb(255, 0, 0)
     }
     .banner {
         background-image: url("../img/banner-mrrobot-mini.jpg");
@@ -1243,6 +1336,9 @@ button {
         height: 800px;
         border-radius: 40px;
         background-color: #1f2127;
+    }
+    .float-button {
+        display: none;
     }
     .profile-elliot {
         background-image: url("../img/profile-elliot.png");
@@ -1310,15 +1406,6 @@ button {
         margin-top: 205px;
         margin-left: 22.5%;
     }
-    .heart {
-        background-image: url("../img/heart.png");
-        display: flex;
-        position: absolute;
-        margin-top: 20px;
-        margin-left: 20px;
-        width: 23px;
-        height: 20px;
-    }
     h2 {
         display: flex;
         justify-content: center;
@@ -1339,18 +1426,25 @@ button {
     button {
         width: 200px;
         height: 60px;
-        background-color: rgb(216, 216, 216);
+        border: 1px solid #FF0000;
+        background-color: #141518;
     }
-    .footer {
+    .div-footer {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 260px;
-
-        width: 100%; /* Vericar se ficou correto */
+        justify-content: center;
+        width: 100%;
+        list-style: none;
+        font-size: 30px;
     }
-
+    .paragraph-footer {
+        text-align: center;
+        color: rgb(241, 241, 241);
+    }
+    .span {
+        font-family: 'mrrobot';
+        font-weight: bold;
+        color: red;
+    }
 }
 
 /* Portrait */
@@ -1363,8 +1457,7 @@ button {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 15px;
-        
+        font-size: 15px;   
     }
     header {
         display: flex;
@@ -1378,7 +1471,7 @@ button {
         font-family: 'mrrobot';
         font-style: normal;
         font-weight: 400;
-        font-size: 29px;
+        font-size: 40px;
         line-height: 30px;
         text-align: center;
         color: #ff0000;
@@ -1396,6 +1489,21 @@ button {
         color:antiquewhite;
         font-size: 20px;
         padding: 5px;
+    }
+    .button-superior {
+        width: 100px;
+        height: 50px;
+        border-radius: 40px;
+        /* border: none; */
+        border: 1px solid #FF0000;
+        background-color: #141518;
+    }
+    .paragraph-button-superior {
+        padding: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        color: rgb(255, 0, 0)
     }
     .banner {
         background-image: url("../img/banner-mrrobot-mini.jpg");
@@ -1448,6 +1556,9 @@ button {
         height: 800px;
         border-radius: 40px;
         background-color: #1f2127;
+    }
+    .float-button {
+        display: none;
     }
     .profile-elliot {
         background-image: url("../img/profile-elliot.png");
@@ -1515,15 +1626,6 @@ button {
         margin-top: 205px;
         margin-left: 22.5%;
     }
-    .heart {
-        background-image: url("../img/heart.png");
-        display: flex;
-        position: absolute;
-        margin-top: 20px;
-        margin-left: 20px;
-        width: 23px;
-        height: 20px;
-    }
     h2 {
         display: flex;
         justify-content: center;
@@ -1544,16 +1646,24 @@ button {
     button {
         width: 200px;
         height: 60px;
-        background-color: rgb(216, 216, 216);
+        border: 1px solid #FF0000;
+        background-color: #141518;
     }
-    .footer {
+    .div-footer {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 260px;
-
-        width: 100%; /* Vericar se ficou correto */
+        justify-content: center;
+        width: 100%;
+        list-style: none;
+        font-size: 30px;
+    }
+    .paragraph-footer {
+        text-align: center;
+        color: rgb(241, 241, 241);
+    }
+    .span {
+        font-family: 'mrrobot';
+        font-weight: bold;
+        color: red;
     }
 }
 
@@ -1567,8 +1677,7 @@ button {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 15px;
-        
+        font-size: 15px; 
     }
     header {
         display: flex;
@@ -1582,7 +1691,7 @@ button {
         font-family: 'mrrobot';
         font-style: normal;
         font-weight: 400;
-        font-size: 29px;
+        font-size: 40px;
         line-height: 30px;
         text-align: center;
         color: #ff0000;
@@ -1600,6 +1709,20 @@ button {
         color:antiquewhite;
         font-size: 20px;
         padding: 5px;
+    }
+    .button-superior {
+        width: 100px;
+        height: 50px;
+        border-radius: 40px;
+        border: 1px solid #FF0000;
+        background-color: #141518;
+    }
+    .paragraph-button-superior {
+        padding: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        color: rgb(255, 0, 0)
     }
     .banner {
         background-image: url("../img/banner-mrrobot-mini.jpg");
@@ -1652,6 +1775,9 @@ button {
         height: 800px;
         border-radius: 40px;
         background-color: #1f2127;
+    }
+    .float-button {
+        display: none;
     }
     .profile-elliot {
         background-image: url("../img/profile-elliot.png");
@@ -1719,15 +1845,6 @@ button {
         margin-top: 205px;
         margin-left: 22.5%;
     }
-    .heart {
-        background-image: url("../img/heart.png");
-        display: flex;
-        position: absolute;
-        margin-top: 20px;
-        margin-left: 20px;
-        width: 23px;
-        height: 20px;
-    }
     h2 {
         display: flex;
         justify-content: center;
@@ -1748,18 +1865,25 @@ button {
     button {
         width: 200px;
         height: 60px;
-        background-color: rgb(216, 216, 216);
+        border: 1px solid #FF0000;
+        background-color: #141518;
     }
-    .footer {
+    .div-footer {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 260px;
-
-        width: 100%; /* Vericar se ficou correto */
+        justify-content: center;
+        width: 100%;
+        list-style: none;
+        font-size: 30px;
     }
-
+    .paragraph-footer {
+        text-align: center;
+        color: rgb(241, 241, 241);
+    }
+    .span {
+        font-family: 'mrrobot';
+        font-weight: bold;
+        color: red;
+    }
 }
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
@@ -1769,6 +1893,7 @@ button {
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) {
+    
     .div-superior {
         display: flex;
         justify-content: center;
@@ -1788,7 +1913,7 @@ button {
         font-family: 'mrrobot';
         font-style: normal;
         font-weight: 400;
-        font-size: 29px;
+        font-size: 40px;
         line-height: 30px;
         text-align: center;
         color: #ff0000;
@@ -1806,6 +1931,21 @@ button {
         color:antiquewhite;
         font-size: 20px;
         padding: 5px;
+    }
+    .button-superior {
+        width: 100px;
+        height: 50px;
+        border-radius: 40px;
+        /* border: none; */
+        border: 1px solid #FF0000;
+        background-color: #141518;
+    }
+    .paragraph-button-superior {
+        padding: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        color: rgb(255, 0, 0)
     }
     .banner {
         background-image: url("../img/banner-mrrobot-mini.jpg");
@@ -1858,6 +1998,9 @@ button {
         height: 800px;
         border-radius: 40px;
         background-color: #1f2127;
+    }
+    .float-button {
+        display: none;
     }
     .profile-elliot {
         background-image: url("../img/profile-elliot.png");
@@ -1925,15 +2068,6 @@ button {
         margin-top: 205px;
         margin-left: 22.5%;
     }
-    .heart {
-        background-image: url("../img/heart.png");
-        display: flex;
-        position: absolute;
-        margin-top: 20px;
-        margin-left: 20px;
-        width: 23px;
-        height: 20px;
-    }
     h2 {
         display: flex;
         justify-content: center;
@@ -1954,19 +2088,25 @@ button {
     button {
         width: 200px;
         height: 60px;
-        background-color: rgb(216, 216, 216);
+        border: 1px solid #FF0000;
+        background-color: #141518;
     }
-    .footer {
+    .div-footer {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 260px;
-
-        width: 100%; /* Vericar se ficou correto */
-    } 
-
-
+        justify-content: center;
+        width: 100%;
+        list-style: none;
+        font-size: 30px;
+    }
+    .paragraph-footer {
+        text-align: center;
+        color: rgb(241, 241, 241);
+    }
+    .span {
+        font-family: 'mrrobot';
+        font-weight: bold;
+        color: red;
+    }
 }
 
 /* Portrait */
@@ -1975,12 +2115,12 @@ button {
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) { 
+    
     .div-superior {
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 15px;
-        
     }
     header {
         display: flex;
@@ -1994,7 +2134,7 @@ button {
         font-family: 'mrrobot';
         font-style: normal;
         font-weight: 400;
-        font-size: 29px;
+        font-size: 40px;
         line-height: 30px;
         text-align: center;
         color: #ff0000;
@@ -2012,6 +2152,20 @@ button {
         color:antiquewhite;
         font-size: 20px;
         padding: 5px;
+    }
+    .button-superior {
+        width: 100px;
+        height: 50px;
+        border-radius: 40px;
+        border: 1px solid #FF0000;
+        background-color: #141518;
+    }
+    .paragraph-button-superior {
+        padding: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        color: rgb(255, 0, 0)
     }
     .banner {
         background-image: url("../img/banner-mrrobot-mini.jpg");
@@ -2064,6 +2218,9 @@ button {
         height: 800px;
         border-radius: 40px;
         background-color: #1f2127;
+    }
+    .float-button {
+        display: none;
     }
     .profile-elliot {
         background-image: url("../img/profile-elliot.png");
@@ -2131,15 +2288,6 @@ button {
         margin-top: 205px;
         margin-left: 22.5%;
     }
-    .heart {
-        background-image: url("../img/heart.png");
-        display: flex;
-        position: absolute;
-        margin-top: 20px;
-        margin-left: 20px;
-        width: 23px;
-        height: 20px;
-    }
     h2 {
         display: flex;
         justify-content: center;
@@ -2160,18 +2308,25 @@ button {
     button {
         width: 200px;
         height: 60px;
-        background-color: rgb(216, 216, 216);
+        border: 1px solid #FF0000;
+        background-color: #141518;
     }
-    .footer {
+    .div-footer {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 260px;
-
-        width: 100%; /* Vericar se ficou correto */
+        justify-content: center;
+        width: 100%;
+        list-style: none;
+        font-size: 30px;
     }
-
+    .paragraph-footer {
+        text-align: center;
+        color: rgb(241, 241, 241);
+    }
+    .span {
+        font-family: 'mrrobot';
+        font-weight: bold;
+        color: red;
+    }
 }
 
 /* Landscape */
@@ -2180,12 +2335,12 @@ button {
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
+    
     .div-superior {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 15px;
-        
+        font-size: 15px;  
     }
     header {
         display: flex;
@@ -2199,7 +2354,7 @@ button {
         font-family: 'mrrobot';
         font-style: normal;
         font-weight: 400;
-        font-size: 29px;
+        font-size: 40px;
         line-height: 30px;
         text-align: center;
         color: #ff0000;
@@ -2217,6 +2372,21 @@ button {
         color:antiquewhite;
         font-size: 20px;
         padding: 5px;
+    }
+    .button-superior {
+        width: 100px;
+        height: 50px;
+        border-radius: 40px;
+        /* border: none; */
+        border: 1px solid #FF0000;
+        background-color: #141518;
+    }
+    .paragraph-button-superior {
+        padding: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        color: rgb(255, 0, 0)
     }
     .banner {
         background-image: url("../img/banner-mrrobot-mini.jpg");
@@ -2269,6 +2439,9 @@ button {
         height: 800px;
         border-radius: 40px;
         background-color: #1f2127;
+    }
+    .float-button {
+        display: none;
     }
     .profile-elliot {
         background-image: url("../img/profile-elliot.png");
@@ -2336,15 +2509,6 @@ button {
         margin-top: 205px;
         margin-left: 22.5%;
     }
-    .heart {
-        background-image: url("../img/heart.png");
-        display: flex;
-        position: absolute;
-        margin-top: 20px;
-        margin-left: 20px;
-        width: 23px;
-        height: 20px;
-    }
     h2 {
         display: flex;
         justify-content: center;
@@ -2365,18 +2529,25 @@ button {
     button {
         width: 200px;
         height: 60px;
-        background-color: rgb(216, 216, 216);
+        border: 1px solid #FF0000;
+        background-color: #141518;
     }
-    .footer {
+    .div-footer {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 260px;
-
-        width: 100%; /* Vericar se ficou correto */
-    } 
-
+        justify-content: center;
+        width: 100%;
+        list-style: none;
+        font-size: 30px;
+    }
+    .paragraph-footer {
+        text-align: center;
+        color: rgb(241, 241, 241);
+    }
+    .span {
+        font-family: 'mrrobot';
+        font-weight: bold;
+        color: red;
+    }
 }
 
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
@@ -2386,6 +2557,7 @@ button {
   and (min-device-width: 414px) 
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
+    
     .div-superior {
         display: flex;
         justify-content: center;
@@ -2405,7 +2577,7 @@ button {
         font-family: 'mrrobot';
         font-style: normal;
         font-weight: 400;
-        font-size: 29px;
+        font-size: 40px;
         line-height: 30px;
         text-align: center;
         color: #ff0000;
@@ -2423,6 +2595,20 @@ button {
         color:antiquewhite;
         font-size: 20px;
         padding: 5px;
+    }
+    .button-superior {
+        width: 100px;
+        height: 50px;
+        border-radius: 40px;
+        border: 1px solid #FF0000;
+        background-color: #141518;
+    }
+    .paragraph-button-superior {
+        padding: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        color: rgb(255, 0, 0)
     }
     .banner {
         background-image: url("../img/banner-mrrobot-mini.jpg");
@@ -2475,6 +2661,9 @@ button {
         height: 800px;
         border-radius: 40px;
         background-color: #1f2127;
+    }
+    .float-button {
+        display: none;
     }
     .profile-elliot {
         background-image: url("../img/profile-elliot.png");
@@ -2542,15 +2731,6 @@ button {
         margin-top: 205px;
         margin-left: 22.5%;
     }
-    .heart {
-        background-image: url("../img/heart.png");
-        display: flex;
-        position: absolute;
-        margin-top: 20px;
-        margin-left: 20px;
-        width: 23px;
-        height: 20px;
-    }
     h2 {
         display: flex;
         justify-content: center;
@@ -2571,18 +2751,25 @@ button {
     button {
         width: 200px;
         height: 60px;
-        background-color: rgb(216, 216, 216);
+        border: 1px solid #FF0000;
+        background-color: #141518;
     }
-    .footer {
+    .div-footer {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 260px;
-
-        width: 100%; /* Vericar se ficou correto */
+        justify-content: center;
+        width: 100%;
+        list-style: none;
+        font-size: 30px;
     }
-
+    .paragraph-footer {
+        text-align: center;
+        color: rgb(241, 241, 241);
+    }
+    .span {
+        font-family: 'mrrobot';
+        font-weight: bold;
+        color: red;
+    }
 }
 
 /* Portrait */
@@ -2591,12 +2778,12 @@ button {
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) {
+    
     .div-superior {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 15px;
-        
+        font-size: 15px;   
     }
     header {
         display: flex;
@@ -2610,7 +2797,7 @@ button {
         font-family: 'mrrobot';
         font-style: normal;
         font-weight: 400;
-        font-size: 29px;
+        font-size: 40px;
         line-height: 30px;
         text-align: center;
         color: #ff0000;
@@ -2628,6 +2815,20 @@ button {
         color:antiquewhite;
         font-size: 20px;
         padding: 5px;
+    }
+    .button-superior {
+        width: 100px;
+        height: 50px;
+        border-radius: 40px;
+        border: 1px solid #FF0000;
+        background-color: #141518;
+    }
+    .paragraph-button-superior {
+        padding: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        color: rgb(255, 0, 0)
     }
     .banner {
         background-image: url("../img/banner-mrrobot-mini.jpg");
@@ -2680,6 +2881,9 @@ button {
         height: 800px;
         border-radius: 40px;
         background-color: #1f2127;
+    }
+    .float-button {
+        display: none;
     }
     .profile-elliot {
         background-image: url("../img/profile-elliot.png");
@@ -2747,15 +2951,6 @@ button {
         margin-top: 205px;
         margin-left: 22.5%;
     }
-    .heart {
-        background-image: url("../img/heart.png");
-        display: flex;
-        position: absolute;
-        margin-top: 20px;
-        margin-left: 20px;
-        width: 23px;
-        height: 20px;
-    }
     h2 {
         display: flex;
         justify-content: center;
@@ -2776,18 +2971,25 @@ button {
     button {
         width: 200px;
         height: 60px;
-        background-color: rgb(216, 216, 216);
+        border: 1px solid #FF0000;
+        background-color: #141518;
     }
-    .footer {
+    .div-footer {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 260px;
-
-        width: 100%; /* Vericar se ficou correto */
-    } 
-
+        justify-content: center;
+        width: 100%;
+        list-style: none;
+        font-size: 30px;
+    }
+    .paragraph-footer {
+        text-align: center;
+        color: rgb(241, 241, 241);
+    }
+    .span {
+        font-family: 'mrrobot';
+        font-weight: bold;
+        color: red;
+    }
 }
 
 /* Landscape */
@@ -2796,12 +2998,12 @@ button {
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) {
+    
     .div-superior {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 15px;
-        
+        font-size: 15px;   
     }
     header {
         display: flex;
@@ -2815,7 +3017,7 @@ button {
         font-family: 'mrrobot';
         font-style: normal;
         font-weight: 400;
-        font-size: 29px;
+        font-size: 40px;
         line-height: 30px;
         text-align: center;
         color: #ff0000;
@@ -2833,6 +3035,20 @@ button {
         color:antiquewhite;
         font-size: 20px;
         padding: 5px;
+    }
+    .button-superior {
+        width: 100px;
+        height: 50px;
+        border-radius: 40px;
+        border: 1px solid #FF0000;
+        background-color: #141518;
+    }
+    .paragraph-button-superior {
+        padding: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        color: rgb(255, 0, 0)
     }
     .banner {
         background-image: url("../img/banner-mrrobot-mini.jpg");
@@ -2885,6 +3101,9 @@ button {
         height: 800px;
         border-radius: 40px;
         background-color: #1f2127;
+    }
+    .float-button {
+        display: none;
     }
     .profile-elliot {
         background-image: url("../img/profile-elliot.png");
@@ -2952,15 +3171,6 @@ button {
         margin-top: 205px;
         margin-left: 22.5%;
     }
-    .heart {
-        background-image: url("../img/heart.png");
-        display: flex;
-        position: absolute;
-        margin-top: 20px;
-        margin-left: 20px;
-        width: 23px;
-        height: 20px;
-    }
     h2 {
         display: flex;
         justify-content: center;
@@ -2981,18 +3191,25 @@ button {
     button {
         width: 200px;
         height: 60px;
-        background-color: rgb(216, 216, 216);
+        border: 1px solid #FF0000;
+        background-color: #141518;
     }
-    .footer {
+    .div-footer {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 260px;
-
-        width: 100%; /* Vericar se ficou correto */
-    } 
-
+        justify-content: center;
+        width: 100%;
+        list-style: none;
+        font-size: 30px;
+    }
+    .paragraph-footer {
+        text-align: center;
+        color: rgb(241, 241, 241);
+    }
+    .span {
+        font-family: 'mrrobot';
+        font-weight: bold;
+        color: red;
+    }
 }
 
 /* ----------- iPhone X ----------- */
@@ -3002,6 +3219,7 @@ button {
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
+    
     .div-superior {
         display: flex;
         justify-content: center;
@@ -3021,7 +3239,7 @@ button {
         font-family: 'mrrobot';
         font-style: normal;
         font-weight: 400;
-        font-size: 29px;
+        font-size: 40px;
         line-height: 30px;
         text-align: center;
         color: #ff0000;
@@ -3039,6 +3257,20 @@ button {
         color:antiquewhite;
         font-size: 20px;
         padding: 5px;
+    }
+    .button-superior {
+        width: 100px;
+        height: 50px;
+        border-radius: 40px;
+        border: 1px solid #FF0000;
+        background-color: #141518;
+    }
+    .paragraph-button-superior {
+        padding: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        color: rgb(255, 0, 0)
     }
     .banner {
         background-image: url("../img/banner-mrrobot-mini.jpg");
@@ -3091,6 +3323,9 @@ button {
         height: 800px;
         border-radius: 40px;
         background-color: #1f2127;
+    }
+    .float-button {
+        display: none;
     }
     .profile-elliot {
         background-image: url("../img/profile-elliot.png");
@@ -3158,15 +3393,6 @@ button {
         margin-top: 205px;
         margin-left: 22.5%;
     }
-    .heart {
-        background-image: url("../img/heart.png");
-        display: flex;
-        position: absolute;
-        margin-top: 20px;
-        margin-left: 20px;
-        width: 23px;
-        height: 20px;
-    }
     h2 {
         display: flex;
         justify-content: center;
@@ -3187,16 +3413,24 @@ button {
     button {
         width: 200px;
         height: 60px;
-        background-color: rgb(216, 216, 216);
+        border: 1px solid #FF0000;
+        background-color: #141518;
     }
-    .footer {
+    .div-footer {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 260px;
-
-        width: 100%; /* Vericar se ficou correto */
+        justify-content: center;
+        width: 100%;
+        list-style: none;
+        font-size: 30px;
+    }
+    .paragraph-footer {
+        text-align: center;
+        color: rgb(241, 241, 241);
+    }
+    .span {
+        font-family: 'mrrobot';
+        font-weight: bold;
+        color: red;
     }
 
 }
@@ -3207,12 +3441,12 @@ button {
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) { 
+    
     .div-superior {
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 15px;
-        
     }
     header {
         display: flex;
@@ -3226,7 +3460,7 @@ button {
         font-family: 'mrrobot';
         font-style: normal;
         font-weight: 400;
-        font-size: 29px;
+        font-size: 40px;
         line-height: 30px;
         text-align: center;
         color: #ff0000;
@@ -3244,6 +3478,20 @@ button {
         color:antiquewhite;
         font-size: 20px;
         padding: 5px;
+    }
+    .button-superior {
+        width: 100px;
+        height: 50px;
+        border-radius: 40px;
+        border: 1px solid #FF0000;
+        background-color: #141518;
+    }
+    .paragraph-button-superior {
+        padding: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        color: rgb(255, 0, 0)
     }
     .banner {
         background-image: url("../img/banner-mrrobot-mini.jpg");
@@ -3276,6 +3524,17 @@ button {
         padding-right: 20px;
         background-color: #0d0e11;
     }
+    .personagens {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        padding-top: 30px;
+        font-size: 30px;
+        font-family: 'mrrobot';
+        color: #ff0000;
+        background-color: #0d0e11;
+    }
     .container-pai {
         position: absolute;
         flex-direction: column;
@@ -3297,6 +3556,9 @@ button {
         border-radius: 40px;
         background-color: #1f2127;
     }
+    .float-button {
+        display: none;
+    }
     .profile-elliot {
         background-image: url("../img/profile-elliot.png");
         display: block;
@@ -3306,7 +3568,7 @@ button {
         width: 180px;
         height: 180px;
         margin-top: 205px;
-        margin-left: 22.5%;
+        margin-left: 22%;
     }
     .profile-darlene {
         background-image: url("../img/profile-darlene.png");
@@ -3317,7 +3579,7 @@ button {
         width: 180px;
         height: 180px;
         margin-top: 205px;
-        margin-left: 22.5%;
+        margin-left: 22%;
     }
     .profile-tyrell {
         background-image: url("../img/profile-tyrell.png");
@@ -3328,7 +3590,7 @@ button {
         width: 180px;
         height: 180px;
         margin-top: 205px;
-        margin-left: 22.5%;
+        margin-left: 22%;
     }
     .profile-whiterose {
         background-image: url("../img/profile-whiterose.png");
@@ -3350,7 +3612,7 @@ button {
         width: 180px;
         height: 180px;
         margin-top: 205px;
-        margin-left: 22.5%;
+        margin-left: 22%;
     }
     .profile-price {
         background-image: url("../img/profile-price.png");
@@ -3361,16 +3623,7 @@ button {
         width: 180px;
         height: 180px;
         margin-top: 205px;
-        margin-left: 22.5%;
-    }
-    .heart {
-        background-image: url("../img/heart.png");
-        display: flex;
-        position: absolute;
-        margin-top: 20px;
-        margin-left: 20px;
-        width: 23px;
-        height: 20px;
+        margin-left: 22%;
     }
     h2 {
         display: flex;
@@ -3392,18 +3645,25 @@ button {
     button {
         width: 200px;
         height: 60px;
-        background-color: rgb(216, 216, 216);
+        border: 1px solid #FF0000;
+        background-color: #141518;
     }
-    .footer {
+    .div-footer {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 260px;
-
-        width: 100%; /* Vericar se ficou correto */
+        justify-content: center;
+        width: 100%;
+        list-style: none;
+        font-size: 30px;
     }
-
+    .paragraph-footer {
+        text-align: center;
+        color: rgb(241, 241, 241);
+    }
+    .span {
+        font-family: 'mrrobot';
+        font-weight: bold;
+        color: red;
+    }
 }
 
 /* Landscape */
@@ -3412,12 +3672,12 @@ button {
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) { 
+    
     .div-superior {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 15px;
-        
+        font-size: 15px; 
     }
     header {
         display: flex;
@@ -3431,7 +3691,7 @@ button {
         font-family: 'mrrobot';
         font-style: normal;
         font-weight: 400;
-        font-size: 29px;
+        font-size: 40px;
         line-height: 30px;
         text-align: center;
         color: #ff0000;
@@ -3449,6 +3709,20 @@ button {
         color:antiquewhite;
         font-size: 20px;
         padding: 5px;
+    }
+    .button-superior {
+        width: 100px;
+        height: 50px;
+        border-radius: 40px;
+        border: 1px solid #FF0000;
+        background-color: #141518;
+    }
+    .paragraph-button-superior {
+        padding: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        color: rgb(255, 0, 0)
     }
     .banner {
         background-image: url("../img/banner-mrrobot-mini.jpg");
@@ -3501,6 +3775,9 @@ button {
         height: 800px;
         border-radius: 40px;
         background-color: #1f2127;
+    }
+    .float-button {
+        display: none;
     }
     .profile-elliot {
         background-image: url("../img/profile-elliot.png");
@@ -3568,15 +3845,6 @@ button {
         margin-top: 205px;
         margin-left: 22.5%;
     }
-    .heart {
-        background-image: url("../img/heart.png");
-        display: flex;
-        position: absolute;
-        margin-top: 20px;
-        margin-left: 20px;
-        width: 23px;
-        height: 20px;
-    }
     h2 {
         display: flex;
         justify-content: center;
@@ -3599,14 +3867,20 @@ button {
         height: 60px;
         background-color: rgb(216, 216, 216);
     }
-    .footer {
+    .div-footer {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 260px;
-
-        width: 100%; /* Vericar se ficou correto */
+        justify-content: center;
+        width: 100%;
+        list-style: none;
+        font-size: 30px;
     }
-
+    .paragraph-footer {
+        text-align: center;
+        color: rgb(241, 241, 241);
+    }
+    .span {
+        font-family: 'mrrobot';
+        font-weight: bold;
+        color: red;
+    }
 }
