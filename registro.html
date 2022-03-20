@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="div-superior">
+        <p class="paragraph-superior">Hack the planet!</p>
+    </div>
+
+    <header>
+        <div>
+            <h1>Mr. Robot</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <button class="button-superior">
+                        <a class="text-button-superior" href="index.html" target="_blank">Home</a>
+                    </button>
+                </li>
+                <li>
+                    <button class="button-superior">
+                        <a class="text-button-superior" href="login.html" target="_blank">Ingressar</a>
+                    </button>
+                </li>
+                <li>
+                    <button class="button-superior">
+                        <a class="text-button-superior"  href="contato.html" target="_blank">Contato</a>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <div class="formulario">
+                <h1>Registro</h1>
+                <form action="" method="post">
+                    <fieldset class="dados">
+                        <div>
+                            <input type="text" name="usuario" id="usuario" placeholder="Nome e sobrenome">
+                        </div>
+                        <div>
+                            <input type="text" name="email" id="email" placeholder="E-mail">
+                        </div>
+                        <div>
+                            <input type="password" name="email" id="password" placeholder="Senha">
+                        </div>
+                        <div class="local">
+                            <label for="paises">Selecione o país</label>
+                            <select name="paises" id="paises">
+                                <optgroup label="Selecione o país">
+                                    <option value="1">Brasil</option>
+                                    <option value="2">Portugal</option>
+                                    <option value="3">Cánada</option>
+                                    <option value="4">Estados Unidos</option>
+                                    <option value="5">Suécia</option>
+                                    <option value="6">Japão</option>
+                                    <option value="7">Suiça</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <input class="botoes-input" type="reset" value="Limpar">
+                            <input class="botoes-input" type="submit" value="Enviar">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>          
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="div-footer">
+            <p class="paragraph-footer">Todos os direitos reservados a <span class="span">FRONT END</span>.</p>
+        </div>
+    </footer>
+</body>
+</html>
