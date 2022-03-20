@@ -139,10 +139,6 @@ li {
 .card-bg:hover {
 	background-color:#000000;
 }
-.card-bg:active {
-	position:relative;
-	top:1px;
-}
 .float-button {
     background-image: url("../img/button.png");
     width: 100%;
